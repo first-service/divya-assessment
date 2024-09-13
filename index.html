@@ -127,11 +127,46 @@
             gap: 30px;
             margin-top: 30px;
         }
-
+        
+    
         .article {
-            width: 32%;
             background-color: white;
+            
+            border: 1px solid #ccc;
+            text-align: center;
         }
+        
+
+@media screen and (max-width: 768px) {
+    .header{
+        display: block;
+    }
+
+    .service-content {
+        flex-direction: column; 
+    }
+    .service-icons {
+        display: contents;
+    }
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    article {
+      width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:500px) {
+    article {
+      width: 100%;
+    }
+}
     </style>
 </head>
 <body>
@@ -154,7 +189,7 @@
                 </div>
                 <div>
                     <img src="plumber-arlington-tx.png" alt="For Plumbing">
-                    <p>For PLUMBING</p>
+                    <p>PLUMBING</p>
                 </div>
             </div>
         </div>
