@@ -14,7 +14,6 @@
         .header {
             background-color: #003b4c;
             color: white;
-            padding: 20px 0;
             display: flex;
             justify-content: space-between;
             width: 100%; 
@@ -22,7 +21,7 @@
 
         .header-column {
             flex: 1;
-            padding: 20px;
+            padding: 0px 20px;
         }
 
     
@@ -40,8 +39,8 @@
         }
 
         .service-icons img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
         }
 
@@ -58,22 +57,22 @@
 
         .header-right img {
             width: 100%;
-            max-width: 400px;
+            max-width: 100%;
             height: auto;
-            border-radius: 8px;
         }
 
         .service-area {
             align-items: center;
             justify-content: center;
-            padding: 50px 15px;
+            padding: 0px 15px;
         }
 
         .service-area h2 {
             color: #a73a31;
-            font-size: 40px;
+            font-size: 50px;
             width: 100%;
             margin-bottom: 20px;
+            margin-top: 23px;
         }
 
         .service-content {
@@ -81,7 +80,7 @@
             gap: 30px;
             align-items: center;
             justify-content: center;
-            max-width: 1200px;
+            max-width: 1310px;
             margin: 0 auto;
         }
 
@@ -91,7 +90,8 @@
         }
 
         .service-text {
-            max-width: 600px;
+            max-width: 800px;
+            margin-top: -60px;
         }
 
         .service-text p {
@@ -113,7 +113,7 @@
         }
 
         .articles {
-            background-color: #f9f9f9;
+            
             padding: 50px 15px;
         }
 
@@ -132,11 +132,30 @@
     
         .article {
             background-color: white;
-            border: 1px solid #ccc;
+            
             text-align: center;
             padding-bottom: 20px;
+            width: 32%;
         }
-        
+        .article  img {
+                   width: 100%;
+                 }
+        .article  p {
+                   text-align: left;
+                   line-height: 28px;
+             }
+        .article a {
+       margin: 0;
+       padding: 0;
+       text-decoration: underline;
+       align-items: flex-start;
+        display: flex;
+    }
+    .article div {
+      display: flex;
+      flex-direction: column;
+    }
+    
 
 @media screen and (max-width: 768px) {
     .header{
@@ -168,10 +187,10 @@
     .service-icons img {
         width: 100px;
        height: 100px;
-    }
+}
     .service-area h2, .articles h2  {
-      color: #a73a31;
-      font-size: 21px;
+    color: #a73a31;
+    font-size: 21px;
     }
     .service-text p {
       font-size: 15px;
@@ -193,6 +212,12 @@
     }
     img {
       width: 80%;
+   }
+   .header-column {
+      padding: 20px 20px;
+   }
+   .service-text {
+     margin-top: -30px;
    }
 }
     </style>
@@ -234,11 +259,16 @@
             <img src="our-service-area.jpg" alt="Service Area Image">
             <div class="service-text">
                 <p>
-                    Minuteman Heating & Air serves Fort Worth, Arlington, Aleda, Alvarado, and the surrounding areas with first quality services you can rely upon. Our certified technicians have the experience necessary to ensure a professional repair, installation, and maintenance of your heating and air conditioning system.
+                    Minuteman Heating & Air serves Fort Worth, Arlington, Aleda, Alvarado, and the 
+                    surrounding areas with first quality services you can rely upon. Our certified 
+                    technicians have the experience necessary to ensure a professional repair, 
+                    installation, and maintenance of your <b>heating and air conditioning </b> system.
+                    You are our first priority, and we are dedicated to your comfort and satisfaction. 
+                    Contact us today to schedule your service, or a free estimate for a new <b>HVAC</b> system for residential 
+                    or commercial applications.
                 </p>
-                <p>
-                    You are our first priority, and we are dedicated to your comfort and satisfaction. Contact us today to schedule your service, or a free estimate for a new HVAC system for residential or commercial applications.
-                </p>
+                
+                    
                 <div class="links">
                     <a href="#">Furnace Repair Service Areas</a><br>
                     <a href="#">Air Conditioning Repair Service Areas</a>
@@ -252,17 +282,20 @@
         <div class="article-container">
             <div class="article">
                 <img src="The-Value-of-Design-and-Right-Sizing-by-Arlington-HVAC-Contractors.jpg" alt="Article 1">
-                <p>Before the not-so-cold winter arrived...</p>
+                <p>Before the not-so-cold winter arrived in Arlington this year, we were looking at the 
+                    importance of headting, ventilation, and air conditioning (HVAC) contractors. In this...</p>
                 <a href="#">Read More</a>
             </div>
             <div class="article">
                 <img src="Arlington-HVAC-Tips-for-Uneven-Heat.jpg" alt="Article 2">
-                <p>Uneven heat. It may be the No. 1 complaint...</p>
+                <p>Uneven heat. It may be the No. 1 complaint among Arlington homeowners
+                    all winter, no matter how cold it is. Many people who have multi-level...</p>
                 <a href="#">Read More</a>
             </div>
             <div class="article">
                 <img src="Arlington-HVAC-Tips-for-Troubleshooting-Furnaces.jpg" alt="Article 3">
-                <p>Fortunately for Arlington homeowners...</p>
+                <p>Fortunately for Arlington homeowners,the winter of 2016 has been,
+                    for the most part, pretty darn warm(knock on wood). There's still some cold days...</p>
                 <a href="#">Read More</a>
             </div>
         </div>
