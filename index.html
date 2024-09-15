@@ -67,6 +67,8 @@
             align-items: center;
             justify-content: center;
             padding: 0px 15px;
+            margin: 0 auto;
+            max-width: 1200px;
         }
 
         .service-area h2 {
@@ -117,7 +119,8 @@
         }
 
         .articles {
-            
+            margin: 0 auto;
+            max-width: 1200px;
             padding: 50px 15px;
         }
 
@@ -181,6 +184,7 @@
     
 }
 @media screen and (min-width: 768px) and (max-width:992px) {
+    
     .header-left h1 {
         font-size: 21px;
     }
@@ -227,10 +231,47 @@
      margin-top: -30px;
    }
 }
+.container {
+        max-width: 100%;  
+        margin: 0 auto;
+       }
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; 
+        
+    }
+}
+.header {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.header-column {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
     </style>
 </head>
 <body>
-   
+    <div class="container">
     <div class="header">
         <div class="header-column header-left">
             <h1>HEATING AND AIR CONDITIONING SERVICES</h1>
@@ -318,6 +359,7 @@
                 <a href="#" style="color:#ab3c3c;">Read More</a>
             </div>
         </div>
+    </div>
     </div>
 </body>
 </html>
